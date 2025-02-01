@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(166, 212, 241);
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image_container {
+    border-radius: 0%;
+    width: 3px;
+    height: 0px;
+    border-radius: 0%;
+}
