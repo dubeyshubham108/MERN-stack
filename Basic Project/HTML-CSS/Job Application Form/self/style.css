@@ -1,0 +1,23 @@
+.header 
+{
+    font-size: x-small;
+}
+
+h1 {
+    text-align: center;
+}
+
+.html, body {
+    font-family: sans-serif;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    padding: 5px;
+    margin: 1%;
+}
+
