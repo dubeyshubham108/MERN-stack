@@ -9,7 +9,6 @@ function App() {
   const [ bmi, setBMI ] = useState('');
   const [ message, setMessage ] = useState('');
 
-
   // Logic
   let calcBmi = (e) => {
 
@@ -22,11 +21,11 @@ function App() {
     }
 
     if(bmi < 25) {
-      setMessage('you are underweight')
+      setMessage('You are Underweight')
     } else if (bmi >= 25 && bmi < 30) {
-      setMessage('You are a healthy weight')
+      setMessage('You are a Healthy Weight')
     } else {
-      setMessage('you are heavy weight')
+      setMessage('You are Heavy Weight')
     }
   }  
 
@@ -39,10 +38,10 @@ function App() {
   return (
     <>
       <div className='App'>
-        <h2>BMI calculator</h2>
+        <h2>BMI Calculator</h2>
         <form onSubmit={calcBmi}>
 
-          <div>
+          <div className='weight'>
             <label>Weight (kgs)</label>
             <input type='text' placeholder='Enter Weight value'
              value={weight}
@@ -50,7 +49,7 @@ function App() {
              />
           </div>
 
-          <div>
+          <div className='weight'>
             <label>Height (in)</label>
             <input type='text' placeholder='Enter Height value'
               value={height}
